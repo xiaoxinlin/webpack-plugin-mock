@@ -16,7 +16,7 @@ jobs:
           node-version: 16
 
       - name: Install
-        run: npm ci
+        run: npm i
 
       - name: Set registry
         run: |
