@@ -4,10 +4,10 @@
 
 ```bash
 # npm
-npm install webpack-plugin-mock
+npm install webpack-plugin-mock -D
 
 # yarn
-yarn add webpack-plugin-mock
+yarn add webpack-plugin-mock -D
 ```
 
 ## 使用
@@ -15,15 +15,16 @@ yarn add webpack-plugin-mock
 需要在当前目录下有 mock 文件夹
 
 ```bash
-./
 ├── mock
+|  ├── books/
+|  |  ├── books/
+|  |  |   └── queryBooksByPage
+|  |  |   |   └──  data.json
 |  ├── example/
-|  |  ├── form-data.js
-|  |  ├── get.js
 |  |  ├── json.js
 |  |  └── x-www-from-urlencoded.js
-|  └── loginst/
-|     └── authStatus.js
+|  └── user/
+|     └── list.json
 └── package.json
 ```
 
@@ -36,11 +37,11 @@ yarn add webpack-plugin-mock
     port: 8090
   })
 
-  --port, -p  Mock 服务的启动端口
-  --config, -c  Mock 服务的启动配置
-  --api-base-path  Mock 服务 API 目录
-  --pretty  是否对 JSON Response 美化
-  --watch, -w  是否监控 API 目录文件变化
+  port  Mock 服务的启动端口
+  config  Mock 服务的启动配置
+  apiBasePath  Mock 服务 API 目录
+  pretty  是否对 JSON Response 美化
+  watch   是否监控 API 目录文件变化
 ```
 
 ## Mock 编写
@@ -49,9 +50,20 @@ yarn add webpack-plugin-mock
 
 ```json
 {
-  "code": "000000",
-  "data": [],
-  "msg": "处理成功"
+  "code": 0,
+  "msg": "",
+  "data": {
+    "dataList|10" :[
+      {
+        "id": "@id",
+        "name": "@cname",
+        "phone": "@pick([13913998972, 19941558406])",
+        "deptName": "前端开发部"
+      }
+    ],
+    "totalCount": 20,
+    "totalPageCount": 2
+  }
 }
 ```
 

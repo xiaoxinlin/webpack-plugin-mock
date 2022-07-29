@@ -1,6 +1,6 @@
 {
   "name": "webpack-plugin-mock",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "files": [
@@ -14,9 +14,18 @@
     "prepack": "npm run build",
     "release": "bumpp --commit --tag --push"
   },
-  "author": "liuhui1990",
+  "description": "A webpack plugin for mockjs",
+  "keywords": [
+    "webpack",
+    "mockjs",
+    "webpack-plugin-mock"
+  ],
+  "homepage": "https://github.com/GuoguoDad/webpack-plugin-mock#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuoguoDad/webpack-plugin-mock.git"
+  },
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "@koa/multer": "^3.0.0",
