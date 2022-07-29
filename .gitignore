@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+node_modules
+dist
+lib
+package-lock.json
+yarn.lock
+.idea
+
+example/node_modules

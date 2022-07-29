@@ -1,0 +1,144 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": [{
+    "groupName": "A",
+    "expressCompanyList|20": [
+      {
+        "expressCompanyCode": "@uuid",
+        "expressCompanyName": "@cname"
+      }
+    ]
+  },
+    {
+      "groupName": "B",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "E",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "F",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "H",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "M",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "L",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    }
+  ,
+    {
+      "groupName": "N",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    }
+  ,
+    {
+      "groupName": "W",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    }
+  ,
+    {
+      "groupName": "S",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    }
+  ,
+    {
+      "groupName": "Q",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "X",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "Y",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "J",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    },
+    {
+      "groupName": "Z",
+      "expressCompanyList|20": [
+        {
+          "expressCompanyCode": "@uuid",
+          "expressCompanyName": "@cname"
+        }
+      ]
+    }
+  ]
+}

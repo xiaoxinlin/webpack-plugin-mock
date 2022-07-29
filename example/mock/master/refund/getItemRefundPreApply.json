@@ -1,0 +1,50 @@
+{
+  "code": "000000",
+  "msg": null,
+  "data": {
+    "orderInfo": {
+      "orderItemStatus": "3",
+      "createTime": "2020-06-19 15:32:28",
+      "orderNo": "001971790345",
+      "orderItemNo": "001971790345"
+    },
+    "goodsInfo": {
+      "goodsCode": "001971790345",
+      "goodsName": "光明优加礼盒250ml",
+      "goodsImgUrl": "",
+      "unitName": "盒",
+      "ctnQuantity": "20",
+      "purchasePrice": "2.8",
+      "purchaseQuantity": "20",
+      "ctnName": "箱",
+      "supplierName": "苏宁自营"
+    },
+    "optionalReasonList": [
+      { "refundReasonCode": "102004", "refundReasonName": "商品临期/过期" },
+      { "refundReasonCode": "102003", "refundReasonName": "商品破损/漏液" },
+      { "refundReasonCode": "102045", "refundReasonName": "包装破损" },
+      { "refundReasonCode": "102048", "refundReasonName": "缺斤少两" },
+      {
+        "refundReasonCode": "102012",
+        "refundReasonName": "发霉/变质/结块/有异物"
+      },
+      { "refundReasonCode": "102001", "refundReasonName": "错发/少发/漏发" },
+      { "refundReasonCode": "102007", "refundReasonName": "商品质量问题" }
+    ],
+    "optionalRefundTypeList": ["退款至原付款账户"],
+    "applyInfo": {
+      "refundQuantity": "3",
+      "refundAmount": "240",
+      "refundTypeName": "退款至原付款账户",
+      "refundReasonCode": "102048",
+      "refundNO": "",
+      "refundTime": "",
+      "refundReasonName": "缺斤少两",
+      "refundfreight": "",
+      "description": "这里是测试文案",
+      "refundImageList": [
+        "https://sdosspre1.cnsuning.com/sfshf/sf/common/2211d785-c3f9-4d0e-884a-def84c443b0a.jpg"
+      ]
+    }
+  }
+}

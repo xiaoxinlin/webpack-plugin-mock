@@ -1,0 +1,105 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": [{
+    "goodsInfo": {
+      "goodsCode": "21",
+      "imgUrl": "@image('300x300', 'ccc')",
+      "goodsName": "苹果",
+      "channelDistributorName": "渠道分销商名称",
+      "barCodeList": ["69588775045"],
+      "ctnQuantity": 31,
+      "ctnName": "箱",
+      "unitName": "盒",
+      "quantity": 20,
+      "unitPrice": "20",
+      "orderDeliveryType": "1"
+    },
+    "orderItemInfo": {
+      "orderItemNo": "A11111",
+      "finishTime": "2020-12-02 12:12:12",
+      "msg": "该商品缺货x件",
+      "button": {
+        "buttonCode": "wytk",
+        "buttonMsg": "我要退款"
+      }
+    },
+    "refundInfo": {
+      "applyAmount": "11",
+      "applyCount": "1",
+      "applyTime": "2020-12-02 12:12:12",
+      "returnRequestNo": "211"
+    },
+    "statusInfo": {
+      "refundStatus": "1",
+      "refundDescription": "退货中"
+    }
+  },{
+    "goodsInfo": {
+      "goodsCode": "21",
+      "imgUrl": "@image('300x300', 'ccc')",
+      "goodsName": "汽水",
+      "channelDistributorName": "渠道分销商名称",
+      "barCodeList": ["69588775045"],
+      "ctnQuantity": 31,
+      "ctnName": "箱",
+      "unitName": "盒",
+      "quantity": 20,
+      "unitPrice": "20",
+      "orderDeliveryType": "1"
+    },
+    "orderItemInfo": {
+      "orderItemNo": "A11111",
+      "finishTime": "2020-12-02 12:12:12",
+      "msg": "商品配送中",
+      "button": {
+        "buttonCode": "wytth",
+        "buttonMsg": "我要退货"
+      }
+    },
+    "refundInfo": {
+      "applyAmount": "11",
+      "applyCount": "1",
+      "applyTime": "2020-12-02 12:12:12",
+      "returnRequestNo": "211"
+    },
+    "statusInfo": {
+      "refundStatus": "1",
+      "refundDescription": "退货中"
+    }
+  },{
+    "goodsInfo": {
+      "goodsCode": "21",
+      "imgUrl": "@image('300x300', 'ccc')",
+      "goodsName": "橘子",
+      "channelDistributorName": "渠道分销商名称",
+      "barCodeList": ["69588775045"],
+      "ctnQuantity": 31,
+      "ctnName": "箱",
+      "unitName": "盒",
+      "quantity": 20,
+      "unitPrice": "20",
+      "orderDeliveryType": "1"
+    },
+    "orderItemInfo": {
+      "orderItemNo": "A11111",
+      "finishTime": "2020-12-02 12:12:12",
+      "msg": "商品配送中",
+      "button": {
+        "buttonCode": "tkxq",
+        "buttonMsg": "退款详情"
+      }
+    },
+    "refundInfo": {
+      "applyAmount": "11",
+      "applyCount": "1",
+      "applyTime": "2020-12-02 12:12:12",
+      "returnRequestNo": "211"
+    },
+    "statusInfo": {
+      "refundStatus": "1",
+      "refundDescription": "退货中"
+    }
+  }
+  ]
+}
