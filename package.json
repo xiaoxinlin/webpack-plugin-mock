@@ -1,6 +1,6 @@
 {
   "name": "webpack-plugin-mock",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "files": [
@@ -11,7 +11,8 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,ts,json}\" --loglevel warn",
     "build": "tsc",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "release": "bumpp --commit --tag --push"
   },
   "author": "liuhui1990",
   "license": "ISC",
@@ -54,6 +55,7 @@
     "@types/mockjs": "^1.0.3",
     "@types/node": "^15.12.4",
     "ava": "^3.13.0",
+    "bumpp": "^8.2.1",
     "cross-env": "^7.0.2",
     "prettier": "^2.2.1",
     "typescript": "^4.3.4"
