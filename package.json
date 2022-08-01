@@ -12,7 +12,9 @@
     "format": "prettier --write \"src/**/*.{js,ts,json}\" --loglevel warn",
     "build": "tsc",
     "prepack": "npm run build",
-    "release": "bumpp --commit --tag --push"
+    "release": "bumpp --commit --tag --push",
+    "lint:eslint": "eslint --fix --ext .js,.ts ./src",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,ts}\""
   },
   "description": "a webpack plugin for mock server interface",
   "keywords": [
@@ -61,6 +63,13 @@
     "@types/lodash": "^4.14.170",
     "@types/mockjs": "^1.0.3",
     "@types/node": "^15.12.4",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "ava": "^3.13.0",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.2",
