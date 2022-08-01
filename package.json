@@ -14,10 +14,8 @@
     "prepack": "npm run build",
     "release": "bumpp --commit --tag --push"
   },
-  "description": "A webpack plugin for mockjs",
+  "description": "a webpack plugin for mock server interface",
   "keywords": [
-    "webpack",
-    "mockjs",
     "webpack-plugin-mock"
   ],
   "homepage": "https://github.com/GuoguoDad/webpack-plugin-mock#readme",
@@ -66,7 +64,20 @@
     "ava": "^3.13.0",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.2",
-    "prettier": "^2.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "typescript": "^4.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write --loglevel warn"
+    ]
   }
 }
