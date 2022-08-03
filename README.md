@@ -1,5 +1,5 @@
 # webpack-plugin-mock
-一款mockjs的webpack插件，配置简单、易用; Mock 编写灵活。
+一款mockjs的webpack插件，配置简单、易用; Mock 编写灵活...如果对你有帮助，给个star
 
 ## 安装
 
