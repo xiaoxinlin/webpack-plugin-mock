@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.config')
 const WebpackPluginMock = require('webpack-plugin-mock')
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'development',
@@ -8,6 +9,7 @@ module.exports = merge(baseWebpackConfig, {
     app: './src/index.tsx'
   },
   plugins: [
+    new ForkTsCheckerWebpackPlugin(),
     new WebpackPluginMock({
       apiBasePath: './mock',
       watch: true,

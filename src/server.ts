@@ -15,7 +15,6 @@ import { MockServerConfig } from './types'
 const serve = async (config: MockServerConfig) => {
   const app = new Koa()
   const router = new Router()
-  // const upload = multer();
 
   const __DEV__ = process.env.NODE_ENV === 'development'
   const publicBasePath = path.resolve(__dirname, '../public')
@@ -104,6 +103,7 @@ const serve = async (config: MockServerConfig) => {
   logSuccess(`[mock] Mock server is running at ${config.port}`)
   logSuccess(`[mock] LOCAL http://localhost:${config.port}`)
   logSuccess(`[mock] LAN  http://${address.ip()}:${config.port}`)
+  logSuccess(`[mock] api list http://${address.ip()}:${config.port}/mock-api/list`)
 
   return {
     app,

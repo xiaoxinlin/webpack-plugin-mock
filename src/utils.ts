@@ -105,10 +105,6 @@ const isRoutePathRegistered = (router: Router, routePath: string) =>
  * 增加内部 route
  */
 const addInternalRoutes = (router: Router) => {
-  // router.get('/node_modules/:path+', async (ctx, next) => {
-  //   await send(ctx, ctx.path);
-  // });
-
   router.get('/mock-api/list', async (ctx, _next) => {
     // TODO: 支持过滤
     ctx.body = {
