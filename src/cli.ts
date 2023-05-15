@@ -63,7 +63,6 @@ const configObject: MockServerConfig = {
   pretty: cli.flags.pretty,
   watch: cli.flags.watch
 }
-
 type MockServerConfigType = MockServerConfig | (() => Promise<MockServerConfig> | MockServerConfig)
 
 const bootstrap = async () => {
