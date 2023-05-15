@@ -75,5 +75,4 @@ const bootstrap = async () => {
 
   serve(configObject)
 }
-
 bootstrap()
