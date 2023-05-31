@@ -12,7 +12,12 @@ import koaStatic from 'koa-static'
 import { logError, logSuccess, logWarning, addInternalRoutes, scanRoutes, registerRoutes, watchRoutes } from './utils'
 import { MockServerConfig } from './types'
 
+let defaultConfig: MockServerConfig = {} as MockServerConfig
+
 const serve = async (config: MockServerConfig) => {
+
+  defaultConfig = config
+
   const app = new Koa()
   const router = new Router()
 
@@ -64,7 +69,7 @@ const serve = async (config: MockServerConfig) => {
       rootPath: config.apiBasePath,
       jsPaths,
       jsonPaths
-    })
+    }, defaultConfig)
   } catch (err) {
     logError(err)
   }
@@ -83,7 +88,7 @@ const serve = async (config: MockServerConfig) => {
       rootPath: config.apiBasePath,
       jsPaths,
       jsonPaths
-    })
+    }, defaultConfig)
   }
 
   const onRoutesChangeDebounced = debounce(onRoutesChange, 1000)

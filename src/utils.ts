@@ -12,6 +12,8 @@ import { mock } from 'mockjs-lite'
 import chokidar from 'chokidar'
 import json5 from 'json5'
 
+import { MockServerConfig } from './types'
+
 const log = console.log
 const logSuccess = (...args: any[]) => console.log(chalk.green(...args))
 const logWarning = (...args: any[]) => console.log(chalk.yellow(...args))
@@ -179,7 +181,8 @@ interface Route {
  */
 const registerRoutes = (
   router: Router<Koa.DefaultState, Koa.DefaultContext>,
-  { rootPath, jsPaths = [], jsonPaths = [] }: RegisterRoutesOptions
+  { rootPath, jsPaths = [], jsonPaths = [] }: RegisterRoutesOptions,
+  config: MockServerConfig
 ) => {
   // JS 模块
   jsPaths.forEach(jsPath => {
@@ -206,7 +209,7 @@ const registerRoutes = (
         }
 
         router[method](routePath, ctx => {
-          ctx.jsonp = mock(route)
+          ctx.jsonp = config.enableMock ? mock(route) : route
         })
         log(`[scanApis] Create a JS route: ${method.toUpperCase()} ${routePath}`)
       }
@@ -275,7 +278,7 @@ const registerRoutes = (
     }
 
     router.all(routePath, ctx => {
-      ctx.jsonp = mock(json)
+      ctx.jsonp = config.enableMock ? mock(json) : json
     })
     log(`[scanApis] Create a JSON route: ${routePath}`)
   })

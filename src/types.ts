@@ -7,4 +7,6 @@ export interface MockServerConfig {
   pretty: boolean
   /** 是否监控 API 目录文件变化 */
   watch: boolean
+  /** 是否默认支持mockjs */
+  enableMock?: boolean
 }

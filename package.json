@@ -1,6 +1,6 @@
 {
-  "name": "webpack-plugin-mock",
-  "version": "1.1.1",
+  "name": "@elin/webpack-plugin-mock",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "files": [
@@ -23,10 +23,10 @@
   "keywords": [
     "webpack-plugin-mock"
   ],
-  "homepage": "https://github.com/GuoguoDad/webpack-plugin-mock#readme",
+  "homepage": "https://github.com/xiaoxinlin/webpack-plugin-mock#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuoguoDad/webpack-plugin-mock.git"
+    "url": "git+https://github.com/xiaoxinlin/webpack-plugin-mock.git"
   },
   "license": "ISC",
   "dependencies": {
@@ -91,5 +91,13 @@
       "eslint --fix",
       "prettier --write --loglevel warn"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/xiaoxinlin/webpack-plugin-mock/issues"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "author": ""
 }

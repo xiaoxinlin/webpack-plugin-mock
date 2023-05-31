@@ -5,10 +5,10 @@
 
 ```bash
 # npm
-npm install webpack-plugin-mock -D
+npm install @elin/webpack-plugin-mock -D
 
 # yarn
-yarn add webpack-plugin-mock -D
+yarn add @elin/webpack-plugin-mock -D
 ```
 
 ## 使用
@@ -31,11 +31,13 @@ yarn add webpack-plugin-mock -D
 
 ## webpack 配置
 ```bash
+const WebpackPluginMock = require('@elin/webpack-plugin-mock')
  new WebpackPluginMock({
     apiBasePath: './mock',
     watch: true,
     pretty: true,
-    port: 8090
+    port: 8090,
+    enableMock: false
   })
 
   port  Mock 服务的启动端口
@@ -43,11 +45,12 @@ yarn add webpack-plugin-mock -D
   apiBasePath  Mock 服务 API 目录
   pretty  是否对 JSON Response 美化
   watch   是否监控 API 目录文件变化
+  enableMock 默认是否支持mockjs语法，默认值：false
 ```
 
 ## Mock 编写
 
-### 用法一：定义 JSON（默认支持 mockjs 语法）
+### 用法一：定义 JSON（支持 mockjs 语法，可通过初始化属性enableMock: true开启）
 
 ```json
 {
@@ -72,7 +75,7 @@ yarn add webpack-plugin-mock -D
 
 兼容旧版 mock 服务，如果 JSON 文件路径为 `xxx/apis/demo/foo/data.json`，则创建的路由为 `/demo/foo`。
 
-### 用法二：定义 CommonJS 模块（默认支持 mockjs 语法），要求模块默认导出的方法调用后返回对象
+### 用法二：定义 CommonJS 模块（支持 mockjs 语法，可通过初始化属性enableMock: true开启），要求模块默认导出的方法调用后返回对象
 
 ```js
 module.exports = () => ({
